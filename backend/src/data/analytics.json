@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "pageViews": 2847590,
+    "uniqueVisitors": 412890,
+    "bounceRate": 32.4,
+    "avgSessionDuration": 245,
+    "newUsersPercent": 58.2,
+    "period": "Últimos 30 dias"
+  },
+  "trafficByDay": [
+    { "date": "2026-05-13", "pageViews": 89420, "visitors": 12840, "sessions": 15200 },
+    { "date": "2026-05-14", "pageViews": 92100, "visitors": 13120, "sessions": 15890 },
+    { "date": "2026-05-15", "pageViews": 88750, "visitors": 12680, "sessions": 14920 },
+    { "date": "2026-05-16", "pageViews": 76200, "visitors": 10940, "sessions": 12800 },
+    { "date": "2026-05-17", "pageViews": 68400, "visitors": 9820, "sessions": 11450 },
+    { "date": "2026-05-18", "pageViews": 95800, "visitors": 13750, "sessions": 16420 },
+    { "date": "2026-05-19", "pageViews": 102340, "visitors": 14680, "sessions": 17560 }
+  ],
+  "trafficSources": [
+    { "source": "Orgânico", "visitors": 165240, "share": 40.0 },
+    { "source": "Direto", "visitors": 103222, "share": 25.0 },
+    { "source": "Social", "visitors": 82578, "share": 20.0 },
+    { "source": "Referral", "visitors": 41289, "share": 10.0 },
+    { "source": "Pago", "visitors": 20561, "share": 5.0 }
+  ],
+  "topPages": [
+    { "path": "/pricing", "views": 284500, "avgTime": 180 },
+    { "path": "/docs/api", "views": 198400, "avgTime": 420 },
+    { "path": "/", "views": 412800, "avgTime": 95 },
+    { "path": "/blog", "views": 156200, "avgTime": 310 },
+    { "path": "/dashboard", "views": 89400, "avgTime": 540 }
+  ],
+  "deviceBreakdown": [
+    { "device": "Desktop", "share": 52.3 },
+    { "device": "Mobile", "share": 38.7 },
+    { "device": "Tablet", "share": 9.0 }
+  ],
+  "conversionFunnel": [
+    { "stage": "Visitantes", "count": 412890, "rate": 100 },
+    { "stage": "Cadastro", "count": 41289, "rate": 10 },
+    { "stage": "Trial", "count": 16516, "rate": 4 },
+    { "stage": "Pagamento", "count": 4129, "rate": 1 },
+    { "stage": "Cliente", "count": 2890, "rate": 0.7 }
+  ]
+}

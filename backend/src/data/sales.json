@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "totalRevenue": 2847590.45,
+    "totalOrders": 18432,
+    "averageOrderValue": 154.48,
+    "conversionRate": 3.24,
+    "growthPercent": 18.7,
+    "period": "Últimos 30 dias"
+  },
+  "monthlyRevenue": [
+    { "month": "Jan", "revenue": 198400, "orders": 1280 },
+    { "month": "Fev", "revenue": 215600, "orders": 1395 },
+    { "month": "Mar", "revenue": 242800, "orders": 1520 },
+    { "month": "Abr", "revenue": 228900, "orders": 1480 },
+    { "month": "Mai", "revenue": 267300, "orders": 1710 },
+    { "month": "Jun", "revenue": 289100, "orders": 1850 },
+    { "month": "Jul", "revenue": 301500, "orders": 1920 },
+    { "month": "Ago", "revenue": 278400, "orders": 1780 },
+    { "month": "Set", "revenue": 312600, "orders": 1980 },
+    { "month": "Out", "revenue": 334200, "orders": 2105 },
+    { "month": "Nov", "revenue": 356800, "orders": 2240 },
+    { "month": "Dez", "revenue": 419990, "orders": 2172 }
+  ],
+  "topProducts": [
+    { "id": "PRD-001", "name": "Plano Enterprise", "revenue": 892400, "units": 1240, "growth": 22.4 },
+    { "id": "PRD-002", "name": "Licença Pro", "revenue": 654200, "units": 3890, "growth": 15.8 },
+    { "id": "PRD-003", "name": "API Credits Pack", "revenue": 421800, "units": 8420, "growth": 31.2 },
+    { "id": "PRD-004", "name": "Consultoria Premium", "revenue": 387500, "units": 156, "growth": 8.3 },
+    { "id": "PRD-005", "name": "Starter Bundle", "revenue": 298600, "units": 5120, "growth": 19.1 }
+  ],
+  "salesByRegion": [
+    { "region": "Sudeste", "revenue": 1245800, "share": 43.7 },
+    { "region": "Sul", "revenue": 612400, "share": 21.5 },
+    { "region": "Nordeste", "revenue": 489200, "share": 17.2 },
+    { "region": "Centro-Oeste", "revenue": 312800, "share": 11.0 },
+    { "region": "Norte", "revenue": 187390, "share": 6.6 }
+  ],
+  "recentOrders": [
+    { "id": "ORD-98421", "customer": "TechCorp Ltda", "amount": 12490.0, "status": "completed", "date": "2026-05-19T08:32:00Z" },
+    { "id": "ORD-98420", "customer": "DataFlow SA", "amount": 3890.5, "status": "processing", "date": "2026-05-19T07:15:00Z" },
+    { "id": "ORD-98419", "customer": "CloudNine", "amount": 89200.0, "status": "completed", "date": "2026-05-18T22:48:00Z" },
+    { "id": "ORD-98418", "customer": "StartupXYZ", "amount": 599.0, "status": "completed", "date": "2026-05-18T19:22:00Z" },
+    { "id": "ORD-98417", "customer": "MegaRetail", "amount": 45600.0, "status": "pending", "date": "2026-05-18T16:05:00Z" }
+  ]
+}

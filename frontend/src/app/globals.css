@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0e14;
+  --foreground: #e8edf4;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+@layer utilities {
+  .glass-card {
+    @apply rounded-xl border border-surface-border bg-surface-card/80 backdrop-blur-sm;
+  }
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent-light to-accent-purple bg-clip-text text-transparent;
+  }
+}
+
+/* Recharts */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: #2d3a4f;
+  stroke-opacity: 0.5;
+}
+
+.recharts-text {
+  fill: #94a3b8;
+  font-size: 12px;
+}

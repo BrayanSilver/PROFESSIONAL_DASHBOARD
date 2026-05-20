@@ -1,0 +1,45 @@
+{
+  "summary": {
+    "totalBalance": 1847290.45,
+    "monthlyIncome": 892400.0,
+    "monthlyExpenses": 534280.0,
+    "netProfit": 358120.0,
+    "cashFlow": 245890.0,
+    "profitMargin": 40.1,
+    "currency": "BRL",
+    "period": "Maio 2026"
+  },
+  "cashFlowHistory": [
+    { "month": "Jan", "income": 720000, "expenses": 480000, "profit": 240000 },
+    { "month": "Fev", "income": 745000, "expenses": 492000, "profit": 253000 },
+    { "month": "Mar", "income": 812000, "expenses": 510000, "profit": 302000 },
+    { "month": "Abr", "income": 798000, "expenses": 505000, "profit": 293000 },
+    { "month": "Mai", "income": 892400, "expenses": 534280, "profit": 358120 }
+  ],
+  "expenseCategories": [
+    { "category": "Salários", "amount": 245000, "share": 45.9 },
+    { "category": "Infraestrutura", "amount": 98400, "share": 18.4 },
+    { "category": "Marketing", "amount": 67800, "share": 12.7 },
+    { "category": "Software", "amount": 45200, "share": 8.5 },
+    { "category": "Operacional", "amount": 38880, "share": 7.3 },
+    { "category": "Outros", "amount": 39000, "share": 7.2 }
+  ],
+  "accounts": [
+    { "id": "ACC-01", "name": "Conta Corrente", "balance": 892400.0, "type": "checking" },
+    { "id": "ACC-02", "name": "Reserva de Emergência", "balance": 456890.0, "type": "savings" },
+    { "id": "ACC-03", "name": "Investimentos", "balance": 498000.45, "type": "investment" }
+  ],
+  "recentTransactions": [
+    { "id": "TXN-8821", "description": "Recebimento Cliente Enterprise", "amount": 124900.0, "type": "income", "date": "2026-05-19T08:00:00Z" },
+    { "id": "TXN-8820", "description": "AWS Cloud Services", "amount": -28450.0, "type": "expense", "date": "2026-05-18T14:30:00Z" },
+    { "id": "TXN-8819", "description": "Folha de Pagamento", "amount": -245000.0, "type": "expense", "date": "2026-05-15T10:00:00Z" },
+    { "id": "TXN-8818", "description": "Assinatura SaaS Tools", "amount": -8900.0, "type": "expense", "date": "2026-05-14T09:15:00Z" },
+    { "id": "TXN-8817", "description": "Recebimento Licenças Pro", "amount": 45600.0, "type": "income", "date": "2026-05-13T16:45:00Z" }
+  ],
+  "kpis": [
+    { "name": "MRR", "value": 892400, "target": 950000, "unit": "BRL" },
+    { "name": "Burn Rate", "value": 534280, "target": 500000, "unit": "BRL" },
+    { "name": "Runway", "value": 14.2, "target": 18, "unit": "meses" },
+    { "name": "LTV/CAC", "value": 4.8, "target": 5.0, "unit": "ratio" }
+  ]
+}

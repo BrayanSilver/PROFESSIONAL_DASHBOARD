@@ -1,0 +1,47 @@
+{
+  "summary": {
+    "overallHealth": "healthy",
+    "uptimePercent": 99.94,
+    "avgResponseTime": 142,
+    "errorRate": 0.12,
+    "requestsPerMinute": 2847,
+    "activeAlerts": 2,
+    "period": "Últimas 24 horas"
+  },
+  "services": [
+    { "name": "API Gateway", "status": "healthy", "uptime": 99.99, "avgLatency": 45, "requests": 1250000 },
+    { "name": "Auth Service", "status": "healthy", "uptime": 99.98, "avgLatency": 89, "requests": 420000 },
+    { "name": "Payment API", "status": "degraded", "uptime": 99.85, "avgLatency": 320, "requests": 89000 },
+    { "name": "Analytics Worker", "status": "healthy", "uptime": 99.97, "avgLatency": 156, "requests": 340000 },
+    { "name": "Notification Service", "status": "healthy", "uptime": 99.96, "avgLatency": 78, "requests": 210000 },
+    { "name": "Data Pipeline", "status": "healthy", "uptime": 99.92, "avgLatency": 245, "requests": 156000 }
+  ],
+  "latencyHistory": [
+    { "time": "00:00", "p50": 120, "p95": 280, "p99": 450 },
+    { "time": "04:00", "p50": 98, "p95": 210, "p99": 380 },
+    { "time": "08:00", "p50": 145, "p95": 320, "p99": 520 },
+    { "time": "12:00", "p50": 168, "p95": 380, "p99": 610 },
+    { "time": "16:00", "p50": 152, "p95": 340, "p99": 540 },
+    { "time": "20:00", "p50": 135, "p95": 295, "p99": 480 },
+    { "time": "23:59", "p50": 142, "p95": 310, "p99": 495 }
+  ],
+  "endpoints": [
+    { "method": "GET", "path": "/api/v1/users", "calls": 450000, "avgMs": 45, "errorRate": 0.02 },
+    { "method": "POST", "path": "/api/v1/orders", "calls": 89000, "avgMs": 156, "errorRate": 0.08 },
+    { "method": "GET", "path": "/api/v1/products", "calls": 320000, "avgMs": 32, "errorRate": 0.01 },
+    { "method": "POST", "path": "/api/v1/payments", "calls": 45000, "avgMs": 320, "errorRate": 0.35 },
+    { "method": "GET", "path": "/api/v1/analytics", "calls": 180000, "avgMs": 89, "errorRate": 0.05 },
+    { "method": "PUT", "path": "/api/v1/settings", "calls": 28000, "avgMs": 67, "errorRate": 0.03 }
+  ],
+  "alerts": [
+    { "id": "ALT-001", "severity": "warning", "message": "Payment API latency acima de 300ms", "service": "Payment API", "time": "2026-05-19T07:45:00Z" },
+    { "id": "ALT-002", "severity": "info", "message": "Deploy v2.4.1 concluído com sucesso", "service": "API Gateway", "time": "2026-05-19T06:00:00Z" }
+  ],
+  "statusCodes": [
+    { "code": 200, "count": 2450000, "share": 94.2 },
+    { "code": 201, "count": 89000, "share": 3.4 },
+    { "code": 400, "count": 32000, "share": 1.2 },
+    { "code": 401, "count": 12000, "share": 0.5 },
+    { "code": 500, "count": 18000, "share": 0.7 }
+  ]
+}
