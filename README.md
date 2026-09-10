@@ -1,106 +1,132 @@
-# TechDash — Dashboard Business Intelligence
+<div align="center">
 
-Painel executivo full-stack para consolidar vendas, analytics, finanças, monitoramento de APIs e dados públicos em tempo real. Projeto de portfólio com **Next.js + NestJS + TypeScript**.
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:06B6D4,100:0F172A&height=180&section=header&text=TechDash&fontSize=36&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Brayan%20R.%20Silveira&descAlignY=55&descSize=16" width="100%"/>
 
-![Visão Geral — KPIs e gráficos consolidados](fotosProjeto/1.png)
+### Executive BI Dashboard · Next.js + NestJS
 
-## Sobre o projeto
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Recharts](https://img.shields.io/badge/Recharts-8884d8?style=for-the-badge&logo=recharts&logoColor=white)
+![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=nestjs&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 
-O **TechDash** simula um ambiente de BI corporativo: KPIs, gráficos interativos (Recharts), alertas de infraestrutura e integração com APIs públicas (câmbio, criptomoedas, população), com fallback offline quando a rede falha.
+<br/>
 
-## Módulos
+[![Portfolio](https://img.shields.io/badge/Portfolio-10b981?style=for-the-badge&logo=googlechrome&logoColor=white)](https://brayansilver.github.io)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/BrayanSilver)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/brayan-r-silveira-b80636150/)
+[![Email](https://img.shields.io/badge/Email-000000?style=for-the-badge&logo=gmail&logoColor=white)](mailto:brayansilver.teen@gmail.com)
+![Last Commit](https://img.shields.io/github/last-commit/BrayanSilver/PROFESSIONAL_DASHBOARD?style=for-the-badge&color=06B6D4&labelColor=000000)
+![Stars](https://img.shields.io/github/stars/BrayanSilver/PROFESSIONAL_DASHBOARD?style=for-the-badge&color=06B6D4&labelColor=000000)
+![Top Language](https://img.shields.io/github/languages/top/BrayanSilver/PROFESSIONAL_DASHBOARD?style=for-the-badge&labelColor=000000)
+
+</div>
+
+---
+
+## 📌 Sobre
+
+Painel executivo full-stack para consolidar **vendas, analytics, finanças, monitoramento de APIs** e dados públicos em tempo real. Projeto de portfólio com Next.js 15 + NestJS + TypeScript.
+
+## 📊 Status cards
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=BrayanSilver&repo=PROFESSIONAL_DASHBOARD&theme=tokyonight&hide_border=true" height="140" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=BrayanSilver&layout=compact&theme=tokyonight&hide_border=true&repos=PROFESSIONAL_DASHBOARD" height="140" />
+</div>
+
+## 🎬 Demo animada
+
+<div align="center">
+
+![Demo TechDash](fotosProjeto/demo.gif)
+
+</div>
+
+> Slideshow gerado a partir das capturas em `fotosProjeto/`. Para um GIF de tela real (5–8s), grave com ScreenToGif / Gifski e substitua este arquivo.
+
+
+## 🔄 Arquitetura / fluxo
+
+```mermaid
+flowchart LR
+  User([Usuário]) --> FE[Next.js Frontend :3000]
+  FE --> API[NestJS API :3002]
+  API --> M1[Vendas]
+  API --> M2[Analytics]
+  API --> M3[Financeiro]
+  API --> M4[Monitoramento]
+  API --> M5[Dados Públicos]
+  M5 --> EXT[(APIs públicas)]
+  API --> JSON[(JSON mock)]
+```
+
+## ✨ Módulos
 
 | Módulo | Rota | Descrição |
 |--------|------|-----------|
-| Visão Geral | `/` | KPIs consolidados de todo o painel |
-| Vendas | `/vendas` | Receita, produtos, regiões e pedidos |
-| Analytics | `/analytics` | Tráfego web, fontes e funil de conversão |
-| Monitoramento | `/monitoramento` | Saúde de APIs, latência e alertas |
-| Financeiro | `/financeiro` | Fluxo de caixa, despesas e KPIs |
-| Dados Públicos | `/dados-publicos` | Câmbio, crypto e população (APIs reais) |
+| Visão Geral | `/` | KPIs consolidados |
+| Vendas | `/vendas` | Receita, produtos, regiões |
+| Analytics | `/analytics` | Tráfego e funil |
+| Monitoramento | `/monitoramento` | Saúde de APIs e alertas |
+| Financeiro | `/financeiro` | Fluxo de caixa |
+| Dados Públicos | `/dados-publicos` | Câmbio, crypto, população |
 
-## Stack
 
-| Camada | Tecnologias |
-|--------|-------------|
-| Frontend | Next.js 15, React 19, TypeScript, Tailwind CSS, Recharts, Lucide |
-| Backend | NestJS 10, Express, TypeScript |
-| Dados | JSON mock em `backend/src/data/` + APIs públicas |
+## ▶️ Como rodar
 
-## Como rodar
-
-### 1. Backend (porta **3002**)
-
+### Backend (porta **3002**)
 ```bash
 cd backend
 npm install
 npm run start:dev
 ```
-
 API: `http://localhost:3002/api`
 
-### 2. Frontend (porta **3000**)
-
+### Frontend (porta **3000**)
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
-
-Abra [http://localhost:3000](http://localhost:3000).
-
-### Variáveis de ambiente (opcional)
-
-Crie `frontend/.env.local`:
+Abra http://localhost:3000
 
 ```env
 NEXT_PUBLIC_API_URL=http://localhost:3002/api
 ```
 
-> **Dica:** o frontend do **Projeto com IA** também usa a porta 3002 — rode apenas um deles por vez ou altere a porta em um dos projetos.
 
-## API (prefixo `/api`)
-
-| Método | Rota | Descrição |
-|--------|------|-----------|
-| GET | `/sales`, `/sales/summary` | Dados e resumo de vendas |
-| GET | `/analytics`, `/analytics/summary` | Analytics e tráfego |
-| GET | `/finance`, `/finance/summary` | Dados financeiros |
-| GET | `/monitoring`, `/monitoring/alerts` | Monitoramento e alertas |
-| GET | `/public-data` | Câmbio, crypto e população |
-
-## Estrutura
-
-```
-Dashboard/
-├── fotosProjeto/     # Capturas de tela
-├── backend/          # NestJS API
-│   └── src/
-│       ├── data/     # JSON mock
-│       └── modules/  # sales, analytics, finance, monitoring, public-data
-└── frontend/         # Next.js App Router
-    └── src/
-        ├── app/      # Páginas por módulo
-        ├── components/
-        └── lib/      # Cliente API e formatters
-```
-
-## Galeria
+## 🖼️ Galeria
 
 ### Visão Geral
-![Painel executivo com KPIs e gráficos de receita e tráfego](fotosProjeto/1.png)
+![Visão Geral](fotosProjeto/1.png)
 
 ### Vendas
-![Módulo de vendas — receita, produtos e pedidos](fotosProjeto/2.png)
+![Vendas](fotosProjeto/2.png)
 
 ### Analytics
-![Analytics — tráfego, fontes e funil](fotosProjeto/3.png)
+![Analytics](fotosProjeto/3.png)
 
 ### Monitoramento
-![Monitoramento de APIs — uptime, latência e alertas](fotosProjeto/4.png)
+![Monitoramento](fotosProjeto/4.png)
 
 ### Financeiro
-![Financeiro — fluxo de caixa e KPIs](fotosProjeto/5.png)
+![Financeiro](fotosProjeto/5.png)
 
 ### Dados Públicos
-![Dados públicos — câmbio, crypto e população](fotosProjeto/6.png)
+![Dados Públicos](fotosProjeto/6.png)
+
+
+---
+
+<div align="center">
+
+**Brayan R. Silveira** · Full Stack Developer
+
+[Portfolio](https://brayansilver.github.io) · [GitHub](https://github.com/BrayanSilver) · [LinkedIn](https://www.linkedin.com/in/brayan-r-silveira-b80636150/)
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,100:06B6D4&height=100&section=footer" width="100%"/>
+
+</div>
